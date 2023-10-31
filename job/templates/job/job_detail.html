@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="col-xl-12">
                         <div class="hero-cap text-center">
-                            <h2>{{job}}</h2>
+                            <h2>{{Job}}</h2>
                         </div>
                     </div>
                 </div>
@@ -32,12 +32,12 @@
                                 </div>
                                 <div class="job-tittle">
                                     <a href="#">
-                                        <h4>{{job}}</h4>
+                                        <h4>{{Job}}</h4>
                                     </a>
                                     <ul>
-                                        <li>{{job.company}}</li>
+                                        <li>{{Job.company}}</li>
                                         <li><i class="fas fa-map-marker-alt"></i>Athens, Greece</li>
-                                        <li>${{job.salary_start}} - ${{job.salary_end}}</li>
+                                        <li>${{Job.salary_start}} - ${{Job.salary_end}}</li>
                                     </ul>
                                 </div>
                             </div>
@@ -48,7 +48,7 @@
                             <div class="post-details1 mb-50">
                                 <!-- Small Section Tittle -->
                                 <div class="small-section-tittle">
-                                    <h4>{{job.description}}</h4>
+                                    <h4>{{Job.description}}</h4>
                                 </div>
                                 <p>It is a long established fact that a reader will beff distracted by vbthe creadable content of a page when looking at its layout. The pointf of using Lorem Ipsum is that it has ahf mcore or-lgess normal distribution of letters, as opposed to using, Content here content here making it look like readable.</p>
                             </div>
@@ -63,10 +63,10 @@
                                <h4>Job Overview</h4>
                            </div>
                           <ul>
-                              <li>Posted date : <span>12 Aug 2019</span></li>
-                              <li>Location : <span>{{job.location}}</span></li>
-                              <li>Vacancy : <span>{{job.vacancy}}</span></li>
-                              <li>Job nature : <span>{{job.job_type}}</span></li>
+                              <li>Posted date : <span> {{Job.created_at|date:"d N o"}}</span></li>
+                              <li>Location : <span>{{Job.location}}</span></li>
+                              <li>Vacancy : <span>{{Job.vacancy}}</span></li>
+                              <li>Job nature : <span>{{Job.job_type}}</span></li>
                               <li>Application date : <span>12 Sep 2020</span></li>
                           </ul>
                          <div class="apply-btn2">
@@ -78,12 +78,12 @@
                            <div class="small-section-tittle">
                                <h4>Company Information</h4>
                            </div>
-                              <span>{{job.company}}</span>
-                              <p>{{job.company.subtitle}}</p>
+                              <span>{{Job.company}}</span>
+                              <p>{{Job.company.subtitle}}</p>
                             <ul>
-                                <li>Name: <span>{{job.company}} </span></li>
-                                <li>Web : <span> {{job.wevsite}}</span></li>
-                                <li>Email: <span>{{job.email}}</span></li>
+                                <li>Name: <span>{{Job.company}} </span></li>
+                                <li>Web : <span> {{Job.wevsite}}</span></li>
+                                <li>Email: <span>{{Job.email}}</span></li>
                             </ul>
                        </div>
                     </div>
