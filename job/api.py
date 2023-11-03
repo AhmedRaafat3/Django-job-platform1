@@ -17,13 +17,13 @@ from .models import job
   #  return Response({'Job':data})
 
 
-class JobListAPI(generics.ListAPIView):
+class JobListAPI(generics.ListCreateAPIView):
     queryset = job.objects.all()
     serializer_class = JobSerializer 
 
 
 
-class JobDetailAPI(generics.RetrieveAPIView):
+class JobDetailAPI(generics.RetrieveUpdateDestroyAPIView):
     queryset = job.objects.all()
     serializer_class = JobSerializer 
 
