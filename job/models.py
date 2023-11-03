@@ -30,7 +30,7 @@ class job(models.Model):
 
 class category(models.Model):
      name= models.CharField(max_length=30)
-     logo= models.CharField(max_length=30)
+     logo= models.CharField(max_length=30,null=True,blank=True)
 
      def __str__(self):
         return self.name
