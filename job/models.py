@@ -38,6 +38,10 @@ class category(models.Model):
      def save(self, *args, **kwargs):
          self.slug = slugify(self.title)
          super(job, self).save(*args, **kwargs)
+
+
+class Meta:
+    ordering=['-id']
     
 
 class Company(models.Model):
