@@ -10,6 +10,6 @@ urlpatterns = [
 
 
     path('api/list', JobListAPI.as_view()),
-    path('api/list/<int:id>',JobDetailAPI.as_view),
+    path('api/list/<int:pk>',JobDetailAPI.as_view),
     
 ]
