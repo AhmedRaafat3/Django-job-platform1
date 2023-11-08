@@ -1,6 +1,6 @@
 from django.contrib import admin
 from django_summernote.admin import SummernoteModelAdmin
-from .models import category,Company,job
+from .models import category,Company,job, JobApply
 
 class jobAdmin(SummernoteModelAdmin):
     list_display=['title','location','company','job_type','vacancy','category']
@@ -12,5 +12,6 @@ class jobAdmin(SummernoteModelAdmin):
 admin.site.register(job,jobAdmin)
 admin.site.register(Company)
 admin.site.register(category)
+admin.site.register(JobApply)
 
 # Register your models here.
