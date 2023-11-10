@@ -36,8 +36,8 @@ class category(models.Model):
         return self.name
      
      def save(self, *args, **kwargs):
-         self.slug = slugify(self.title)
-         super(job, self).save(*args, **kwargs)
+         self.slug = slugify(self.name)
+         super(category, self).save(*args, **kwargs)
 
 
 class Meta:

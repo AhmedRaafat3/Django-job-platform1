@@ -21,8 +21,8 @@ def create_company(n):
             Company.objects.create(
                  name=faker.company(),
                  website=faker.url(),
-                 descrption=faker.text(),
-                  location=random.choice(['New York','Los Angles','Chicago']),
+                subtitle=faker.text(),
+                 # location=random.choice(['New York','Los Angles','Chicago']),
                   email= faker.email(),
                   logo= f"company/{images[random.randint(0,3)]}"
           
